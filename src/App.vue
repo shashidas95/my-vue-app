@@ -1,10 +1,17 @@
 <template>
+  <input type="text" v-model="course.name" />
   <h1>{{ course.name }}</h1>
+  <input type="text" v-model="course.mentor" />
   <h1>course by: {{ course.mentor }}</h1>
-  <h1>platform  {{ course.platform }}</h1>
-  <button @click="count++">+</button>
-  <h1>{{ count }}</h1>
-  <button @click="count--">-</button>
+  <input type="text" v-model="course.platform" />
+  <h1>platform {{ course.platform }}</h1>
+  <div>
+    <div><input type="text" v-model="count" /></div>
+
+    <button @click="count++">+</button>
+    <h1>{{ count }}</h1>
+    <button @click="count--">-</button>
+  </div>
 </template>
 
 <script setup>
